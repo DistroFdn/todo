@@ -114,7 +114,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "To Do app"))
         self.plainTextEdit.setPlaceholderText(_translate("MainWindow", "please Enter your Task"))
         self.run.setText(_translate("MainWindow", "Register"))
         self.label_2.setText(_translate("MainWindow", "کار های پیشرو"))
