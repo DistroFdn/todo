@@ -14,7 +14,11 @@ while True:
         
         row = row + 1
 
-        tasks.update({ row : [add[0] , add[1] , "ny"]})
+        try:
+            tasks.update({ row : [add[0] , add[1] , "ny"]})
+        except IndexError:
+            print('enter in proper format')
+            continue
 
         print("Done !")
 
