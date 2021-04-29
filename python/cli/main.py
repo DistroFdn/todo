@@ -1,5 +1,8 @@
+from tinydb import TinyDB, Query
+
+db = TinyDB('todo.json')
+q = Query()
 row = 0
-tasks = {}
 
 print("Welcome to TODO app\n")
 
@@ -14,19 +17,21 @@ while True:
         
         row = row + 1
 
-        tasks.update({ row : [add[0] , add[1] , "ny"]})
+        db.insert({"row": row, "title": add[0], "description": add [1], "status": "undone"})
 
         print("Done !")
 
     elif work.lower() == "c" :
         check = int(input("\nWrite row of your job >>> "))
 
-        tasks.pop(check)
 
-        print(tasks)
+        print(db.search(q.row == check))
+        db.remove(q.row == check)
+
 
     elif work.lower() == "l" :
-        print(tasks)
+        for item in db.all():
+            print(item)
 
     elif work.lower() == "e" :
         print("Ok, Bye !")
