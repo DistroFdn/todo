@@ -31,7 +31,7 @@ class Database():
         self.cnxn.commit()                    
     def fetch(self):
 
-        self.cursor.execute("SELECT * FROM Daily")
+        self.cursor.execute("SELECT id,descriptions,labels,end_at_date,end_at_time FROM Daily")
         rows = self.cursor.fetchall()
         return rows
     def insert(self,end_at_date,end_at_time,labels,descriptions):
@@ -43,20 +43,19 @@ class Database():
 
         self.cursor.execute("DELETE FROM Daily WHERE id=? ",(id,))
         self.cnxn.commit()
-    def update(self,id,start_at,end_at_date,end_at_time,labels,descriptions):
+    def update(self,id,end_at_date,end_at_time,labels,descriptions):
 
-        self.cursor.execute("""UPDATE Daily SET start_at = ? ,end_at_date = ?,
+        self.cursor.execute("""UPDATE Daily SET end_at_date = ?,
                                end_at_time = ?,labels = ?,
                                descriptions = ? WHERE id = ? """,
-                               (start_at,end_at_date,end_at_time,labels,descriptions,id))
+                               (end_at_date,end_at_time,labels,descriptions,id))
         self.cnxn.commit()
     def __del__(self):
         
         self.cnxn.close()
 
 
-db = Database('ToDo')
+# db = Database('ToDo')
 
-db.insert('2021-06-11','12:03','سلام','ریاضی ۲')
-db.insert('2021-06-11','12:03','سلام۳','ریاضی ۳')
-db.insert('2021-06-11','12:03','سلام۴','ریاضی ۴')
+# db.insert('2021-06-11','12:03','امتحان میان ترم','سیگنال ')
+# db.insert('2021-06-11','12:03','تمرین بخش ۲ ','جبرخطی ')
