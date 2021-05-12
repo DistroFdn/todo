@@ -7,11 +7,11 @@ Todo App.
 ![gui](https://s19.picofile.com/file/8431961318/Screenshot_20210427_043502.png)
 ## Tkinter
 Python/Tkinter desktop GUI app to manage your tasks in daily. This app uses SQL Server to store data  
-main job
+## main job  
 ![alt text](https://github.com/hoco1/todo/blob/master/img/Tkinter.gif)
-Screenshot project
+## Screenshot project  
 ![alt text](https://github.com/hoco1/todo/blob/master/img/Tkinter.jpg)
-Screenshot database
+## Screenshot database
 ![alt text](https://github.com/hoco1/todo/blob/master/img/Tkinter_sqlServer.jpg)
 # CLI
 ![gui](https://s19.picofile.com/file/8431961368/Screenshot_20210427_044722.png)
