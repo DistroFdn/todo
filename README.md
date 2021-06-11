@@ -10,7 +10,7 @@ Python/Tkinter desktop GUI app to manage your tasks in daily. This app uses SQL 
 
 ## ScreenShots
 ![d](https://raw.githubusercontent.com/DistroTEAM/todo/master/img/Tkinter.jpg)
-# More Info
+## More Info
 ![s](https://raw.githubusercontent.com/DistroTEAM/todo/master/img/Tkinter.gif)
 
 ## databese
