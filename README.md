@@ -1,6 +1,7 @@
 # todo
 
-Todo App.
+![s](https://img.shields.io/github/languages/code-size/distroteam/todo)![h](https://img.shields.io/github/stars/distroteam/todo)   
+
 
 # GUI
 ## pyQt
