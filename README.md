@@ -6,7 +6,11 @@ Todo App.
 ## pyQt
 ![gui](https://s19.picofile.com/file/8431961318/Screenshot_20210427_043502.png)
 ## Tkinter
-Python/Tkinter desktop GUI app to manage your tasks in daily. This app uses SQL Server to store data  
+Python/Tkinter desktop GUI app to manage your tasks in daily. This app uses SQL Server to store data 
+
+## ScreenShots
+![d](https://raw.githubusercontent.com/DistroTEAM/todo/master/img/Tkinter.jpg)  
+
 # CLI
 ![gui](https://s19.picofile.com/file/8431961368/Screenshot_20210427_044722.png)
 
